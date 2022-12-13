@@ -7,6 +7,6 @@ export class NumberList extends Component {
     };
 
     render() {
-        return <StringsList list={this.state.numbers}/>
+        return <StringsList list={this.state.numbers}/>;
     }
 }
