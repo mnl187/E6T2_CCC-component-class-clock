@@ -6,6 +6,16 @@ export class NumberList extends Component {
         numbers: [1],
     };
 
+    componentDidMount() {
+        this.intervalId = setInterval(() => {
+
+        }, 1000);
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.intervalId);
+    }
+
     render() {
         return <StringsList list={this.state.numbers}/>;
     }
