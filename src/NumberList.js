@@ -9,6 +9,11 @@ export class NumberList extends Component {
     componentDidMount() {
         this.intervalId = setInterval(() => {
 
+            this.setState(prev => {
+                return {
+                    numbers: [...prev.numbers, prev.numbers.length + 1],
+                }
+            })
         }, 1000);
     }
 
