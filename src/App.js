@@ -8,6 +8,10 @@ export const App = (props) => (
     <>
         {/*<Clock/>*/}
         {/*<NumberList/>*/}
-        <Progressbar/>
+        <Progressbar percentage={0}/>
+        <Progressbar percentage={25}/>
+        <Progressbar percentage={50}/>
+        <Progressbar percentage={75}/>
+        <Progressbar percentage={100}/>
     </>
 );
