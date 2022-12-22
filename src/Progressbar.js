@@ -8,8 +8,10 @@ export const Progressbar = props => {
         style={{
             width: `${props.percentage}%`,
         }}
-        >
-        <p>{props.percentage}%</p>
-    <div/>;
-
-}
+    >{
+        props.percentage > 10
+            ? <p>{props.percentage}%</p>
+            : null
+    }
+        <div/>
+        };
